@@ -6,15 +6,13 @@ browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
 server-->browser: spa.js
 
 note over browser:
-browser starts executing js-code
-that requests JSON data from server 
+js code is executed
 end note
 
 browser->server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
-server-->browser: [..., {content: 'test', date: '2023-01-05T17:56:27.748Z'}]
+server-->browser: [..., {"content":"new note","date":"2023-01-05T18:34:14.157Z"}]
 
 note over browser:
-browser executes the event handler
-that renders notes to display
+notes displayed
 end note
 
